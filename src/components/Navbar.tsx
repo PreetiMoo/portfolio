@@ -7,6 +7,7 @@ import { cn } from '../lib/cn'
 export function Navbar({ activeId }: { activeId: string }) {
   const [open, setOpen] = useState(false)
   const items = useMemo(() => navItems, [])
+  const baseUrl = import.meta.env.BASE_URL
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -33,7 +34,7 @@ export function Navbar({ activeId }: { activeId: string }) {
               onClick={() => scrollToId('home')}
               className="group inline-flex items-center gap-2 rounded-xl px-2 py-1.5 transition hover:bg-white/[0.04]"
             >
-              <img src="/pm-icon.svg" alt="PM logo" className="h-6 w-6 rounded-md ring-1 ring-white/10" />
+              <img src={`${baseUrl}pm-icon.svg`} alt="PM logo" className="h-6 w-6 rounded-md ring-1 ring-white/10" />
               <span className="text-sm font-semibold tracking-tight text-white">
                 Preeti<span className="text-white/70">.dev</span>
               </span>
@@ -67,7 +68,7 @@ export function Navbar({ activeId }: { activeId: string }) {
 
             <div className="flex items-center gap-2">
               <a
-                href="/Preeti_Moolya_2026.pdf"
+                href={`${baseUrl}Preeti_Moolya_2026.pdf`}
                 className="btn-secondary hidden sm:inline-flex"
                 download
                 aria-label="Download resume"
@@ -114,7 +115,7 @@ export function Navbar({ activeId }: { activeId: string }) {
                       </button>
                     )
                   })}
-                  <a href="/Preeti_Moolya_2026.pdf" className="btn-secondary w-full justify-center" download>
+                  <a href={`${baseUrl}Preeti_Moolya_2026.pdf`} className="btn-secondary w-full justify-center" download>
                     <Download className="h-4 w-4" />
                     Download resume
                   </a>
