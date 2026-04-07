@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { Download, Menu, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
+import pmIcon from '/pm-icon.svg'
 import { navItems } from '../content/site'
 import { cn } from '../lib/cn'
 
@@ -34,7 +35,7 @@ export function Navbar({ activeId }: { activeId: string }) {
               onClick={() => scrollToId('home')}
               className="group inline-flex items-center gap-2 rounded-xl px-2 py-1.5 transition hover:bg-white/[0.04]"
             >
-              <img src={`${baseUrl}pm-icon.svg`} alt="PM logo" className="h-6 w-6 rounded-md ring-1 ring-white/10" />
+              <img src={pmIcon} alt="PM logo" className="h-6 w-6 rounded-md ring-1 ring-white/10" />
               <span className="text-sm font-semibold tracking-tight text-white">
                 Preeti<span className="text-white/70">.dev</span>
               </span>
