@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-zinc-200 antialiased;
+  }
+
+  a {
+    @apply text-zinc-200;
+  }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.35);
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .glass {
+    @apply bg-white/[0.03] ring-1 ring-white/[0.06] backdrop-blur-xl;
+  }
+
+  .card {
+    @apply glass rounded-2xl shadow-card;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl font-semibold tracking-tight text-white;
+  }
+
+  .section-kicker {
+    @apply text-xs uppercase tracking-[0.22em] text-zinc-400;
+  }
+
+  .accent-text {
+    @apply bg-accent-gradient bg-clip-text text-transparent;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium
+      transition duration-200 will-change-transform;
+  }
+
+  .btn-primary {
+    @apply btn text-black bg-white hover:bg-zinc-100 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply btn glass hover:bg-white/[0.06] active:scale-[0.98];
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs text-zinc-200 ring-1 ring-white/[0.07] bg-white/[0.03];
+  }
+}
+
+@layer utilities {
+  .bg-noise {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.03) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .mask-fade-y {
+    mask-image: linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+  }
+}
+
