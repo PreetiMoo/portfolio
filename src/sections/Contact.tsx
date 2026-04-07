@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
-import { Globe, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa6'
+import { SiLeetcode } from 'react-icons/si'
 import { useMemo, useState } from 'react'
 import { Reveal } from '../components/Reveal'
 import { Section } from '../components/Section'
@@ -103,14 +105,18 @@ export function Contact() {
                     <Mail className="h-4 w-4" />
                     {site.contact.email}
                   </span>
-                  <span className="text-white/40">Email</span>
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70">
+                    <Mail className="h-3.5 w-3.5" />
+                  </span>
                 </a>
                 <a className="chip w-full justify-between hover:bg-white/[0.06]" href={`tel:${site.contact.phone}`}>
                   <span className="inline-flex items-center gap-2">
                     <Phone className="h-4 w-4" />
                     {site.contact.phone}
                   </span>
-                  <span className="text-white/40">Call</span>
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70">
+                    <Phone className="h-3.5 w-3.5" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -120,7 +126,7 @@ export function Contact() {
             <div className="card p-6">
               <div className="text-lg font-semibold text-white">Social</div>
               <p className="mt-2 text-sm text-zinc-400">
-                Connect where you’re most active. LeetCode is a placeholder for now.
+                Connect where you’re most active.
               </p>
               <div className="mt-5 grid gap-2">
                 <a
@@ -130,7 +136,7 @@ export function Contact() {
                   rel="noreferrer"
                 >
                   <span className="inline-flex items-center gap-2">
-                    <Globe className="h-4 w-4" />
+                    <FaLinkedin className="h-4 w-4 text-[#0A66C2]" />
                     LinkedIn
                   </span>
                   <span className="text-white/40">Open</span>
@@ -142,16 +148,14 @@ export function Contact() {
                   rel="noreferrer"
                 >
                   <span className="inline-flex items-center gap-2">
-                    <Globe className="h-4 w-4" />
+                    <FaGithub className="h-4 w-4" />
                     GitHub
                   </span>
                   <span className="text-white/40">Open</span>
                 </a>
-                <a className="btn-secondary w-full justify-between" href={site.links.leetcode}>
+                <a className="btn-secondary w-full justify-between" href={site.links.leetcode} target="_blank" rel="noreferrer">
                   <span className="inline-flex items-center gap-2">
-                    <span className="inline-flex h-4 w-4 items-center justify-center rounded bg-white/[0.08] text-[10px] font-semibold">
-                      LC
-                    </span>
+                    <SiLeetcode className="h-4 w-4 text-amber-400" />
                     LeetCode
                   </span>
                   <span className="text-white/40">Open</span>

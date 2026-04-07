@@ -14,7 +14,7 @@ export function Projects() {
         ))}
       </div>
 
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <Reveal delay={0.05}>
           <div className="card p-6 sm:p-7">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -30,7 +30,7 @@ export function Projects() {
             </div>
           </div>
         </Reveal>
-      </div>
+      </div> */}
     </Section>
   )
 }

@@ -17,7 +17,7 @@ export function Skills() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="text-lg font-semibold text-white">{g.title}</div>
-                  <div className="mt-1 text-sm text-zinc-400">Hover to explore</div>
+                  {/* <div className="mt-1 text-sm text-zinc-400">Hover to explore</div> */}
                 </div>
                 <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/[0.04] ring-1 ring-white/[0.08]">
                   <g.icon className="h-5 w-5 text-white/80" />
