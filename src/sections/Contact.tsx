@@ -131,9 +131,9 @@ export function Contact() {
           <Reveal delay={0.05}>
             <div className="card p-6">
               <div className="text-lg font-semibold text-white">Social</div>
-              <p className="mt-2 text-sm text-zinc-400">
+              {/* <p className="mt-2 text-sm text-zinc-400">
                 Connect where you’re most active.
-              </p>
+              </p> */}
               <div className="mt-5 grid gap-2">
                 <a
                   className="btn-secondary group w-full justify-between"
@@ -145,7 +145,7 @@ export function Contact() {
                     <FaLinkedin className="h-4 w-4 text-[#0A66C2] transition group-hover:-translate-y-[1px]" />
                     LinkedIn
                   </span>
-                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
+                  {/* <span className="text-white/40 transition group-hover:text-white/70">Open</span> */}
                 </a>
                 <a
                   className="btn-secondary group w-full justify-between"
@@ -157,7 +157,7 @@ export function Contact() {
                     <FaGithub className="h-4 w-4 transition group-hover:-translate-y-[1px]" />
                     GitHub
                   </span>
-                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
+                  {/* <span className="text-white/40 transition group-hover:text-white/70">Open</span> */}
                 </a>
                 <a
                   className="btn-secondary group w-full justify-between"
@@ -169,7 +169,7 @@ export function Contact() {
                     <SiLeetcode className="h-4 w-4 text-amber-400 transition group-hover:-translate-y-[1px]" />
                     LeetCode
                   </span>
-                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
+                  {/* <span className="text-white/40 transition group-hover:text-white/70">Open</span> */}
                 </a>
               </div>
             </div>
