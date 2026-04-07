@@ -46,12 +46,18 @@ export function Hero() {
                   Contact Me
                 </button>
                 <div className="flex flex-wrap gap-2 sm:ml-auto">
-                  <a className="chip hover:bg-white/[0.06]" href={`mailto:${site.contact.email}`}>
-                    <Mail className="h-3.5 w-3.5" />
+                  <a
+                    className="chip group transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/[0.07] hover:ring-white/[0.18] hover:shadow-[0_10px_24px_rgba(0,0,0,0.3)]"
+                    href={`mailto:${site.contact.email}`}
+                  >
+                    <Mail className="h-3.5 w-3.5 transition group-hover:-translate-y-[1px] group-hover:text-white" />
                     {site.contact.email}
                   </a>
-                  <a className="chip hover:bg-white/[0.06]" href={`tel:${site.contact.phone}`}>
-                    <Phone className="h-3.5 w-3.5" />
+                  <a
+                    className="chip group transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/[0.07] hover:ring-white/[0.18] hover:shadow-[0_10px_24px_rgba(0,0,0,0.3)]"
+                    href={`tel:${site.contact.phone}`}
+                  >
+                    <Phone className="h-3.5 w-3.5 transition group-hover:-translate-y-[1px] group-hover:text-white" />
                     {site.contact.phone}
                   </a>
                 </div>

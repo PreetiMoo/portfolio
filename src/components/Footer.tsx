@@ -20,9 +20,9 @@ export function Footer() {
               href={site.links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 transition hover:text-white"
+              className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
-              <FaLinkedin className="h-4 w-4 text-[#0A66C2]" />
+              <FaLinkedin className="h-4 w-4 text-[#0A66C2] transition group-hover:-translate-y-[1px]" />
               LinkedIn
             </a>
 
@@ -30,9 +30,9 @@ export function Footer() {
               href={site.links.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 transition hover:text-white"
+              className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
-              <FaGithub className="h-4 w-4 text-zinc-300" />
+              <FaGithub className="h-4 w-4 text-zinc-300 transition group-hover:-translate-y-[1px]" />
               GitHub
             </a>
 
@@ -40,9 +40,9 @@ export function Footer() {
               href={site.links.leetcode}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 transition hover:text-white"
+              className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
-              <SiLeetcode className="h-4 w-4 text-amber-400" />
+              <SiLeetcode className="h-4 w-4 text-amber-400 transition group-hover:-translate-y-[1px]" />
               LeetCode
             </a>
 
@@ -59,18 +59,18 @@ export function Footer() {
             <a
               href={`${baseUrl}Preeti_Moolya_2026.pdf`}
               download
-              className="inline-flex items-center gap-1.5 transition hover:text-white"
+              className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
-              <FileText className="h-4 w-4 text-zinc-300" />
+              <FileText className="h-4 w-4 text-zinc-300 transition group-hover:-translate-y-[1px]" />
               Resume
             </a>
 
             <button
               type="button"
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 transition hover:text-white"
+              className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
-              <ArrowUp className="h-4 w-4 text-zinc-300" />
+              <ArrowUp className="h-4 w-4 text-zinc-300 transition group-hover:-translate-y-[1px]" />
               Back to top
             </button>
           </div>

@@ -100,23 +100,29 @@ export function Contact() {
             <div className="card p-6">
               <div className="text-lg font-semibold text-white">Direct contact</div>
               <div className="mt-4 space-y-2 text-sm">
-                <a className="chip w-full justify-between hover:bg-white/[0.06]" href={`mailto:${site.contact.email}`}>
-                  <span className="inline-flex items-center gap-2">
-                    <Mail className="h-4 w-4" />
+                <a
+                  className="chip group w-full justify-between transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/[0.07] hover:ring-white/[0.18] hover:shadow-[0_10px_24px_rgba(0,0,0,0.32)]"
+                  href={`mailto:${site.contact.email}`}
+                >
+                  <span className="inline-flex items-center gap-2 transition group-hover:text-white">
+                    <Mail className="h-4 w-4 transition group-hover:-translate-y-[1px] group-hover:text-white" />
                     {site.contact.email}
                   </span>
-                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70">
-                    <Mail className="h-3.5 w-3.5" />
-                  </span>
+                  {/* <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70 transition group-hover:bg-white/[0.09] group-hover:ring-white/[0.2]">
+                    <Mail className="h-3.5 w-3.5 transition group-hover:scale-[1.06]" />
+                  </span> */}
                 </a>
-                <a className="chip w-full justify-between hover:bg-white/[0.06]" href={`tel:${site.contact.phone}`}>
-                  <span className="inline-flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
+                <a
+                  className="chip group w-full justify-between transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/[0.07] hover:ring-white/[0.18] hover:shadow-[0_10px_24px_rgba(0,0,0,0.32)]"
+                  href={`tel:${site.contact.phone}`}
+                >
+                  <span className="inline-flex items-center gap-2 transition group-hover:text-white">
+                    <Phone className="h-4 w-4 transition group-hover:-translate-y-[1px] group-hover:text-white" />
                     {site.contact.phone}
                   </span>
-                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70">
-                    <Phone className="h-3.5 w-3.5" />
-                  </span>
+                  {/* <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/[0.04] ring-1 ring-white/[0.08] text-white/70 transition group-hover:bg-white/[0.09] group-hover:ring-white/[0.2]">
+                    <Phone className="h-3.5 w-3.5 transition group-hover:scale-[1.06]" />
+                  </span> */}
                 </a>
               </div>
             </div>
@@ -130,35 +136,40 @@ export function Contact() {
               </p>
               <div className="mt-5 grid gap-2">
                 <a
-                  className="btn-secondary w-full justify-between"
+                  className="btn-secondary group w-full justify-between"
                   href={site.links.linkedin}
                   target="_blank"
                   rel="noreferrer"
                 >
                   <span className="inline-flex items-center gap-2">
-                    <FaLinkedin className="h-4 w-4 text-[#0A66C2]" />
+                    <FaLinkedin className="h-4 w-4 text-[#0A66C2] transition group-hover:-translate-y-[1px]" />
                     LinkedIn
                   </span>
-                  <span className="text-white/40">Open</span>
+                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
                 </a>
                 <a
-                  className="btn-secondary w-full justify-between"
+                  className="btn-secondary group w-full justify-between"
                   href={site.links.github}
                   target="_blank"
                   rel="noreferrer"
                 >
                   <span className="inline-flex items-center gap-2">
-                    <FaGithub className="h-4 w-4" />
+                    <FaGithub className="h-4 w-4 transition group-hover:-translate-y-[1px]" />
                     GitHub
                   </span>
-                  <span className="text-white/40">Open</span>
+                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
                 </a>
-                <a className="btn-secondary w-full justify-between" href={site.links.leetcode} target="_blank" rel="noreferrer">
+                <a
+                  className="btn-secondary group w-full justify-between"
+                  href={site.links.leetcode}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span className="inline-flex items-center gap-2">
-                    <SiLeetcode className="h-4 w-4 text-amber-400" />
+                    <SiLeetcode className="h-4 w-4 text-amber-400 transition group-hover:-translate-y-[1px]" />
                     LeetCode
                   </span>
-                  <span className="text-white/40">Open</span>
+                  <span className="text-white/40 transition group-hover:text-white/70">Open</span>
                 </a>
               </div>
             </div>
