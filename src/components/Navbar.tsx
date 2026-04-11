@@ -69,7 +69,7 @@ export function Navbar({ activeId }: { activeId: string }) {
 
             <div className="flex items-center gap-2">
               <a
-                href={`${baseUrl}Preeti_Moolya_2026.pdf`}
+                href={`${baseUrl}Preeti_Moolya_Resume.pdf`}
                 className="btn-secondary hidden sm:inline-flex"
                 download
                 aria-label="Download resume"
@@ -116,7 +116,7 @@ export function Navbar({ activeId }: { activeId: string }) {
                       </button>
                     )
                   })}
-                  <a href={`${baseUrl}Preeti_Moolya_2026.pdf`} className="btn-secondary w-full justify-center" download>
+                  <a href={`${baseUrl}Preeti_Moolya_Resume.pdf`} className="btn-secondary w-full justify-center" download>
                     <Download className="h-4 w-4" />
                     Download resume
                   </a>

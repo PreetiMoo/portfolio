@@ -57,7 +57,7 @@ export function Footer() {
             </a> */}
 
             <a
-              href={`${baseUrl}Preeti_Moolya_2026.pdf`}
+              href={`${baseUrl}Preeti_Moolya_Resume.pdf`}
               download
               className="group inline-flex items-center gap-1.5 transition hover:text-white"
             >
